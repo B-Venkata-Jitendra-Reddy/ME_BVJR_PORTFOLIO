@@ -1,0 +1,153 @@
+<main class="main">
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>"Let’s connect! Fill out the form below to get in touch — whether it’s for a project, collaboration, or just to
+        say hi."</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-5">
+          <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+            <h3>Contact Info</h3>
+            <p>"Feel free to reach out to me for collaborations, projects, or any inquiries. I’m always open to
+              discussing new opportunities and ideas."</p>
+
+            <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon-box">
+                <a href="https://www.google.com/maps/search/?api=1&query=Richure+district,+Sindhnur+Taluk,+Karnataka,+India"
+                  target="_blank" style="text-decoration: none; color: inherit;">
+                  <i class="bi bi-geo-alt"></i>
+                </a>
+              </div>
+              <div class="content">
+                <a href="https://www.google.com/maps/search/?api=1&query=Richure+district,+Sindhnur+Taluk,+Karnataka,+India"
+                  target="_blank" style="text-decoration: none; color: inherit;">
+                  <h4>Our Location</h4>
+                  <p>Richure district, Sindhnur Taluk</p>
+                  <p>India, Karnataka</p>
+                </a>
+              </div>
+
+            </div>
+
+            <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon-box">
+                <a href="tel:+196363851732" style="text-decoration: none; color: inherit;">
+                  <i class="bi bi-telephone"></i>
+                </a>
+              </div>
+              <a href="tel:+196363851732" style="text-decoration: none; color: inherit;">
+                <div class="content">
+                  <h4>Phone Number</h4>
+                  <p>+19 6363851732</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+              <div class="icon-box">
+                <a href="mailto:venkatjitendrareddy@gmail.com" style="text-decoration: none; color: inherit;">
+                  <i class="bi bi-envelope"></i>
+                </a>
+              </div>
+              <div class="content">
+                <h4>Email Address</h4>
+                <a href="mailto:venkatjitendrareddy@gmail.com" style="text-decoration: none; color: inherit;">
+                  <p>venkatjitendrareddy@gmail.com</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+            <h3>Get In Touch</h3>
+            <p>If you have a project in mind, want to collaborate, or simply wish to connect, feel free to reach out.
+              I’m always open to new opportunities and conversations.</p>
+
+            <form action="/contact" method="POST" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Full Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="tel" class="form-control" name="number" pattern="\d{10}" maxlength="10"
+                    placeholder="Your Phone number" required="">
+                </div>
+
+                <div class="col-12">
+                  <input type="email" class="form-control" name="email" placeholder="Enter Your Email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="">
+                </div>
+
+                <div class="col-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Enter Subject" required="">
+                </div>
+
+                <div class="col-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Enter Message"
+                    required=""></textarea>
+                </div>
+
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn btn-info">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- /Contact Section -->
+
+
+  <!-- Success Popup Modal -->
+  <div class="modal fade" id="thankYouModal" tabindex="-1" aria-labelledby="thankYouLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center p-4"
+        style="background-color: #0d1b2a; color: #fff; border-radius: 12px; border: 1px solid #1f2a3c;">
+        <h5 class="modal-title mb-3" id="thankYouLabel" style="color: #00c4ff;">Thank You!</h5>
+        <p style="font-size: 15px; color: #ccc;">Thanks for reaching out. We will contact you soon.</p>
+        <button type="button" class="btn btn-outline-info mt-3 px-4 py-2" data-bs-dismiss="modal"
+          style="border-radius: 30px;">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    const form = document.querySelector("form");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // stop default action (for demo, remove when backend is ready)
+
+      // Show modal
+      var thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+      thankYouModal.show();
+
+      // Reset form
+      form.reset();
+    });
+  </script>
+
+
+
+
+</main>

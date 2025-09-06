@@ -1,0 +1,231 @@
+<main class="main">
+
+  <!-- Portfolio Details Section -->
+  <section id="portfolio-details" class="portfolio-details section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Portfolio Details</h2>
+      <p>Connectify is a real-time video conferencing application developed using the MERN stack and Socket.IO.
+        It enables seamless one-to-one and group video calls, instant messaging, and screen sharing with a secure
+        and scalable backend.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="portfolio-details-media">
+            <div class="main-image">
+              <div class="portfolio-details-slider swiper init-swiper" data-aos="zoom-in">
+                <script type="application/json" class="swiper-config">
+                    {
+                      "loop": true,
+                      "speed": 1000,
+                      "autoplay": {
+                        "delay": 6000
+                      },
+                      "effect": "creative",
+                      "creativeEffect": {
+                        "prev": {
+                          "shadow": true,
+                          "translate": [0, 0, -400]
+                        },
+                        "next": {
+                          "translate": ["100%", 0, 0]
+                        }
+                      },
+                      "slidesPerView": 1,
+                      "navigation": {
+                        "nextEl": ".swiper-button-next",
+                        "prevEl": ".swiper-button-prev"
+                      }
+                    }
+                  </script>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/connectify1.png" alt="Portfolio Image" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/connectify2.png" alt="Portfolio Image" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/connectify3.png" alt="Portfolio Image" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/connectify4.png" alt="Portfolio Image" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/connectify5.png" alt="Portfolio Image" class="img-fluid">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="assets/img/portfolio/connectify6.png" alt="Portfolio Image" class="img-fluid">
+                  </div>
+
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+
+            <div class="thumbnail-grid" data-aos="fade-up" data-aos-delay="200">
+              <div class="row g-2 mt-3">
+                <div class="col-3">
+                  <img src="assets/img/portfolio/connectify1.png" alt="Gallery Image" class="img-fluid glightbox">
+                </div>
+                <div class="col-3">
+                  <img src="assets/img/portfolio/connectify2.png" alt="Gallery Image" class="img-fluid glightbox">
+                </div>
+                <div class="col-3">
+                  <img src="assets/img/portfolio/connectify3.png" alt="Gallery Image" class="img-fluid glightbox">
+                </div>
+                <div class="col-3">
+                  <img src="assets/img/portfolio/connectify4.png" alt="Gallery Image" class="img-fluid glightbox">
+                </div>
+                <div class="col-3">
+                  <img src="assets/img/portfolio/connectify5.png" alt="Gallery Image" class="img-fluid glightbox">
+                </div>
+                <div class="col-3">
+                  <img src="assets/img/portfolio/connectify6.png" alt="Gallery Image" class="img-fluid glightbox">
+                </div>
+
+              </div>
+            </div>
+
+            <div class="tech-stack-badges" data-aos="fade-up" data-aos-delay="300">
+              <span>React.js</span>
+              <span>Express.js</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>Socket IO</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="portfolio-details-content">
+            <div class="project-meta">
+              <div class="badge-wrapper">
+                <span class="project-badge">Full Stack Development</span>
+              </div>
+              <div class="date-client">
+                <!-- <div class="meta-item">
+                  <i class="bi bi-calendar-check"></i>
+                  <span>September 2024</span>
+                </div> -->
+                <div class="meta-item">
+                  <i class="bi bi-buildings"></i>
+                  <span>Personal Project</span>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="project-title">Connectify - Video Conference Calling</h2>
+
+            <!-- <div class="project-website">
+              <i class="bi bi-link-45deg"></i>
+              <a href="#" target="_blank">projectwebsite.example.com</a>
+            </div> -->
+
+            <div class="project-overview">
+              <p class="lead">
+                Connectify is a modern video conferencing platform built on the MERN stack with real-time
+                communication powered by WebRTC and Socket.IO. It allows users to create meeting rooms,
+                connect with others via video/audio, chat live, and share their screen — all from a secure
+                browser-based application.
+              </p>
+
+              <div class="accordion project-accordion" id="portfolio-details-projectAccordion">
+                <div class="accordion-item" data-aos="fade-up">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#portfolio-details-collapse-1" aria-expanded="true" aria-controls="collapseOne">
+                      <i class="bi bi-clipboard-data me-2"></i> Project Overview
+                    </button>
+                  </h2>
+                  <div id="portfolio-details-collapse-1" class="accordion-collapse collapse show"
+                    data-bs-parent="#portfolio-details-projectAccordion">
+                    <div class="accordion-body">
+                      <p>The project was designed to provide an alternative to existing video call solutions by offering
+                        a lightweight, customizable, and open-source conferencing tool. Users can sign up, generate
+                        meeting links, and invite participants for instant collaboration. Integrated chat and
+                        screen-sharing features make it suitable for online classes, business meetings, and remote
+                        teamwork.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="100">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#portfolio-details-collapse-2" aria-expanded="false" aria-controls="collapseTwo">
+                      <i class="bi bi-exclamation-diamond me-2"></i> The Challenge
+                    </button>
+                  </h2>
+                  <div id="portfolio-details-collapse-2" class="accordion-collapse collapse"
+                    data-bs-parent="#portfolio-details-projectAccordion">
+                    <div class="accordion-body">
+                      <p>Developing a stable real-time communication app required handling multiple challenges like
+                        ensuring low-latency video streams, managing peer-to-peer WebRTC connections, synchronizing chat
+                        and media events, and scaling the backend to support multiple concurrent users without
+                        performance degradation.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item" data-aos="fade-up" data-aos-delay="200">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#portfolio-details-collapse-3" aria-expanded="false"
+                      aria-controls="collapseThree">
+                      <i class="bi bi-award me-2"></i> The Solution
+                    </button>
+                  </h2>
+                  <div id="portfolio-details-collapse-3" class="accordion-collapse collapse"
+                    data-bs-parent="#portfolio-details-projectAccordion">
+                    <div class="accordion-body">
+                      <p>I implemented WebRTC for peer-to-peer video/audio streaming and used Socket.IO for real-time
+                        signaling between users. The backend (Node.js + Express.js) manages authentication and meeting
+                        sessions, while MongoDB stores user and meeting data. The React.js frontend provides an
+                        intuitive
+                        interface with features like chat, mute/unmute, screen sharing, and meeting controls, ensuring a
+                        smooth conferencing experience.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-features" data-aos="fade-up" data-aos-delay="300">
+              <h3><i class="bi bi-stars"></i> Key Features</h3>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <ul class="feature-list">
+                    <li><i class="bi bi-check2-circle"></i> Real-time Video & Audio Calls</li>
+                    <li><i class="bi bi-check2-circle"></i> Group Meetings with Unique Room Links</li>
+                    <li><i class="bi bi-check2-circle"></i> Secure Authentication</li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="feature-list">
+                    <li><i class="bi bi-check2-circle"></i> Live Chat Messaging</li>
+                    <li><i class="bi bi-check2-circle"></i> Screen Sharing Support</li>
+                    <li><i class="bi bi-check2-circle"></i> Cross-Device Compatibility</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
+              <!-- <a href="#" class="btn-view-project">View Live Project</a> -->
+              <a href="/Landhub-project" class="btn-next-project">Next Project <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section><!-- /Portfolio Details Section -->
+
+</main>
