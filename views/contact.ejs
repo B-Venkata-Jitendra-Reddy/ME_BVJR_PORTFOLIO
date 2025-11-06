@@ -73,7 +73,7 @@
             <p>If you have a project in mind, want to collaborate, or simply wish to connect, feel free to reach out.
               I’m always open to new opportunities and conversations.</p>
 
-            <form action="/contact" method="POST" data-aos="fade-up" data-aos-delay="200">
+            <form action="/contact" method="POST" data-aos="fade-up" data-aos-delay="200" id="myForm">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -133,21 +133,12 @@
 
 
   <script>
-    const form = document.querySelector("form");
+    const form = document.getElementById('myForm');
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // stop default action (for demo, remove when backend is ready)
-
-      // Show modal
-      var thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
+    form.addEventListener('submit', function () {
+      const thankYouModal = new bootstrap.Modal(document.getElementById('thankYouModal'));
       thankYouModal.show();
-
-      // Reset form
-      form.reset();
     });
   </script>
-
-
-
 
 </main>
